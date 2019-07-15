@@ -1,0 +1,21 @@
+body {
+  max-width: 1000px;
+  width: 90%;
+  margin: 25px auto;
+}
+.row {
+  margin: 0;
+}
+.about-me-section .col-6 {
+  height: 100px;
+}
+.skills-section {
+  height: 100px;
+}
+.skills-section ol {
+  width: 300px;
+  margin: auto;
+}
+footer {
+  text-align: center;
+}
