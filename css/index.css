@@ -19,3 +19,6 @@ body {
 footer {
   text-align: center;
 }
+.project-section .title {
+  border: solid 1px red;
+}
