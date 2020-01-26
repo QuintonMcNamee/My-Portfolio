@@ -6,8 +6,24 @@ body {
 .row {
   margin: 0;
 }
-.about-me-section .col-6 {
-  height: 100px;
+.nav-container {
+  font-size: 24px;
+  margin: 25px 25px;
+}
+.about_skills {
+  margin-left: 50px;
+  margin-bottom: 50px;
+}
+.about-me-section {
+  font-size: 16px;
+}
+.about-me-section .links {
+  font-size: 36px;
+}
+.about-me-section .headshot {
+  width: 100%;
+  border-radius: 8px;
+  margin: 25px 0 5px;
 }
 .skills-section {
   height: 100px;
@@ -18,7 +34,5 @@ body {
 }
 footer {
   text-align: center;
-}
-.project-section .title {
-  border: solid 1px red;
+  margin: 50px 0;
 }

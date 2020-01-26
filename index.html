@@ -1,89 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Meta Tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+  <!-- Meta Tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Portfolio - WIP</title>
+  <title>Quinton McNamee ー Full-Stack Web Developer</title>
 
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <!-- Favicon -->
+  <link rel="shortcut icon" type="image/png" href="./images/favicon.ico">
 
-    <!-- CSS -->
-    <link rel="stylesheet" type="text/css" href="./css/index.css">
+  <!-- Need this version of Bootstrap for flex -->
+  <!-- Bootstrap JS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-    <!-- JS -->
-    <script src="./components/accordion/accordion.js" async></script>
-  </head>
+  <!-- Need all 3 of these in this order to make the carousel work -->
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <!-- JQUERY -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <!-- Bootstrap JS -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  
+  <!-- CSS -->
+  <link rel="stylesheet" type="text/css" href="./css/index.css" />
 
-  <body>
+  <!-- JS -->
+  <script src="./components/carousel/carousel.js" async></script>
+</head>
 
-    <!-- NAV BAR -->
-    <div class="nav-container">
-      <nav class="nav-bar">
+<body>
+
+  <!-- NAV BAR -->
+  <div class="nav-container">
+    <div class="row">
+      <nav class="d-flex nav-bar col-12 justify-content-around">
         <a href="#">Home</a>
-        <a href="#">About</a>
+        <a href="#carousel">Projects</a>
         <a href="#">Skills</a>
-        <a href="#">Projects</a>
         <a href="#">Contact</a>
       </nav>
     </div>
+    
+  </div>
 
-    <!-- ABOUT ME SECTION -->
-    <section class="about-me-section">
-      <div class="row">
-        <div class="col-6">
-          professional profile picture
-        </div>
-        <div class="col-6">
-          personal mission statement
-        </div>
-      </div>
-    </section>
+  <!-- ABOUT ME SECTION -->
 
-    <!-- SKILLS SECTION -->
-    <section class="skills-section">
-      <div class="row">
-        <div class="col-12">
-          <ol>
-            <li>skill 1</li>
-            <li>skill 2</li>
-            <li>skill 3</li>
-          </ol>
-
+  <!-- Headshot -->
+  <section class="about-me-section">
+    <div class="row">
+      <div class="col-3">
+        <img class="headshot" src="./images/griffith_observatory_december_2019_cropped.jpg" />
+        <div class="links">
+          <a href="https://github.com/QuintonMcNamee" target="_blank">GitHub</a><br />
+          <a href="https://www.linkedin.com/in/quinton-mcnamee/" target="_blank">LinkedIn</a>
         </div>
       </div>
 
-    </section>
+      <!-- About/Skills -->
+      <div class="col-8 about_skills">
+        <h1>Quinton McNamee</h1>
 
-    <!-- PROJECT SECTION -->
-    <section class="project-section">
-      <h1>Some of my recent work</h1>
-      <p>accordion component here</p>
-      <a href="https://worthymon.netlify.com/" target="_blank" />Recent work 1</a>
-      <br />
-      <a href="https://github.com/bw-pokemon-go-catch/Front-End-Unit-2" target="_blank" />Recent work 1 - repo</a>
-      <br />
-      <a href="https://starwars.quintonmcnamee.now.sh/" target="_blank" />Recent work 2</a>
-      <br />
-      <a href="https://github.com/QuintonMcNamee/Sprint-Challenge-React-Wars" target="_blank" />Recent work 2 - repo</a>
-    </section>
+        <h3>About</h3>
+        <p>Reliable and responsible Junior Full-Stack Web Developer with a passion for programming and organization.</p>
 
-    <!-- CONTACT SECTION -->
-    <section class="contact-section">
-      <h1>Contact Me</h1>
-      <ol>
-        <li>contact info 1</li>
-        <li>contact info 2</li>
-        <li>contact info 3</li>
+        <h3>Skills</h3>
+        <li>HTML / CSS / JavaScript ー 1 year</li>
+        <li>React / Redux / Jest ー 9 months</li>
+        <li>Node / Express / SQL ー 6 months</li>
+        <li>Python ー 3 months</li>
+        <li>Git / Github ー1 year</li>
+        <li>Responsive Design / Accessibility ー 1 year</li>
+        <li>Agile software development ー 1 year</li>
+        <li>Computer setup / Maintenance / Troubleshooting</li>
+        <li>Word processing / Spreadsheet / Presentation</li>
+        <li>Fluent written and spoken French</li>
+      </div>
+    </div>
+  </section>
+
+  </section>
+
+  <!-- CAROUSEL/PROJECTS SECTION -->
+  <div id="carousel">
+    <h2>Projects</h2>  
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+        <li data-target="#myCarousel" data-slide-to="3"></li>
       </ol>
-    </section>
+  
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner">
+        <div class="item active">
+          <a href="https://worthymon.netlify.com/" target="_blank"><img src="./images/worthymon_preview.jpg" alt="Project 1 - Worthymon" style="width:100%;height:600px"></a>
+        </div>
+  
+        <div class="item">
+          <a href="https://blockclubcalendar.now.sh/" target="_blank"><img src="./images/block_club_calendar_preview.png" alt="Project 2 - Block Club Calendar" style="width:100%;height:600px"></a>
+        </div>
+      
+        <div class="item">
+          <a href="https://dadjokesfe.netlify.com/" target="_blank"><img src="./images/dad_jokes_preview.png" alt="Project 3 - Dad Jokes" style="width:100%;height:600px"></a>
+        </div>
 
-    <!-- FOOTER -->
-    <footer>
-      ©Copyright 2019
-    </footer>
+        <div class="item">
+          <a href="https://backendbookkeeping.com/" target="_blank"><img src="./images/backend_bookkeeping_preview.jpg" alt="Project 4 - Backend Bookeeping" style="width:100%;height:600px"></a>
+        </div>
+      </div>
+  
+      <!-- Left and right controls -->
+      <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </div>
 
-  </body>
+  <!-- CONTACT SECTION -->
+  <!-- <section class="contact-section">
+    <h1>Contact Me</h1>
+    <ol>
+      <li>contact info 1</li>
+      <li>contact info 2</li>
+      <li>contact info 3</li>
+    </ol>
+  </section> -->
+
+  <!-- FOOTER -->
+  <footer>
+    &copy; Copyright <script type="text/javascript">document.write(new Date().getFullYear())</script>
+  </footer>
+
+</body>
 </html>
